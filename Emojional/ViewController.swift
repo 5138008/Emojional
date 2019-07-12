@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var customMessages = ["Jazzy" : ["cool song1", "cool song2", "Boop jbhk", "Oh yeah"], "Upbeat" : ["doot doot", "insert good music here"]]
+    var customMessages = ["Jazzy" : ["My Funny Valentine, Chet Baker", "Djangology, Django Reinhart", "In a Sentimental Mood, Duke Eligton", "Rain, Ella Fitzgerald and Joe Pass"], "Upbeat" : ["Sanctuary, Joji", "Santeria, Sublime"]]
     var random = 0
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         }
         
         let emojiMessage = customMessages[emojis[selectedEmotion!]!]?[random]
-        let alertController = UIAlertController(title: "What's up?", message : emojiMessage , preferredStyle: UIAlertController.Style.alert)
+        let alertController = UIAlertController(title: "Bored? Try", message : emojiMessage , preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "Okay", style : UIAlertAction.Style.default, handler: nil))
         present(alertController, animated : true, completion : nil)
 
